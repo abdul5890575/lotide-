@@ -1,14 +1,3 @@
-const assertEqual = function(actual, expected) {
-    if (actual === expected) {
-      return console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-    } else if(actual === undefined) {
-      return console.log(` 🛑🛑🛑 Assertion Failed: ${actual} === undefined`);
-    } else {
-      return console.log(` 🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-    }
-  };
-  
-
 const eqArrays = function(array1, array2) {
     let check = true;
     
@@ -41,3 +30,23 @@ const eqObjects = function(object1, object2) {
 };
 
 
+const assertObjectsEqual = function(obj1, obj2) {
+    actual= eqObjects(obj1,obj2)
+    const inspect = require('util').inspect; // <= add this line
+    console.log(`Example label: ${inspect(obj1)}`);
+    if (actual === true) {
+        return console.log(` ✅✅✅ Assertion Passed: ${inspect(obj1)} === ${inspect(obj2)}`);
+      } else if(actual === undefined) {
+        return console.log(` 🛑🛑🛑 Assertion Failed:  ${inspect(obj1)}  === undefined`);
+      } else {
+        return console.log(` 🛑🛑🛑 Assertion Failed: ${inspect(obj1)} !== ${inspect(obj2)}`);
+      }
+};
+
+  a = { a: '1', b: 2 } 
+  b = { b: 2, a: '1' }
+
+  assertObjectsEqual(a,b)
+
+
+  
