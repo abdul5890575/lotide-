@@ -1,4 +1,4 @@
-// Returns Array with the elements fron the second array
+// Returns Array with that excludes the second array elements
 const without = function(array1, arrayexclude) {
   let indexArray = [];
   for(let j = 0; j < arrayexclude.length; j++) {

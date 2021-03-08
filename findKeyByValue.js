@@ -1,4 +1,4 @@
-//Finds key by value
+//Finds first key of object by value
 const findKeyByValue = function(object, value) {
   for(let key in object) {
     if (object[key] === value) {

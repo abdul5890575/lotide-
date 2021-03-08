@@ -1,4 +1,4 @@
-//Returns position of each letter in the sentence
+//Returns an object with position of each letter in the sentence
 const letterPositions = function(sentence) {
     const results = {};
     let index = 0;

@@ -1,4 +1,4 @@
-//Maps the first letter of each element in array
+//Maps new array according to the callback condition
 const map = function(array, callback) {
     const results = [];
     for (let item of array) {
