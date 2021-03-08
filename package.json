@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "abdul589/lotide",
   "version": "1.0.0",
   "description": "lotide project",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/abdul5890575/lotide-.git"
   },
-  "author": "abdul",
+  "author": "Abdul Rehman Shaukat",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abdul5890575/lotide-/issues"
