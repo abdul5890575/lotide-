@@ -1,11 +1,4 @@
-const assertEqual = function(actual, expected) {
-    if (actual === expected) {
-      return console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-    } else {
-      return console.log(` 🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-    }
-};
-
+// count the occurance of letter in a string and returns an object
 const countLetters = function(string) {
   let result = {}
   
@@ -16,7 +9,7 @@ const countLetters = function(string) {
           result[letter]++;
       }
   }
-  console.log(result)
   return result;
 }
 
+module.exports = countLetters;

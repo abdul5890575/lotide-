@@ -1,12 +1,4 @@
-const assertEqual = function(actual, expected) {
-    if (actual === expected) {
-      return console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-    } else {
-      return console.log(` 🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-    }
-  };
-  
-
+// compares and returns the number of times an element occurs in a object from a given list
 const countOnly = function(allItems, itemsToCount) {
   let arrayTrueValues = [];
   let result = {};
@@ -26,7 +18,8 @@ const countOnly = function(allItems, itemsToCount) {
     }
     count = 0
   }
-  console.log(result)
   return result;
 }; 
+
+module.exports = countOnly;
 
