@@ -1,19 +1,11 @@
+//Returns the first element of the array
+const assertEqual = require('./assertEqual');
 
 const head = function(array) {
-   if (array === []){
-    return undefined 
-   } else { 
+  if (array.length === 0) {
+    console.log('Array is Undefined')
+  } else {
     return array[0];
-   }
+  }
 };
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual === undefined) {
-    return console.log('Array undefined')
-  } else if (actual !== expected) {
-    return console.log(` 🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  } 
-};  
-
+module.exports = head;
