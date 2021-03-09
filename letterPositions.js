@@ -10,7 +10,6 @@ const letterPositions = function(sentence) {
           }
         index ++;  
     }
-    console.log(results)
     return results;
 };
 letterPositions('hello')
